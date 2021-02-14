@@ -9,7 +9,7 @@ import sys
 from typing import Final
 
 HOST : Final = "localhost"  #or the address of the Redis instance
-PORT : Final = 6379
+PORT : Final = 6379         #port
 DB : Final = 0
 MASTER_NAME : Final = f"master{random.randint(0, 1e4)}_"
 TODO_TASK_LIST : Final = "todo_tasks"
