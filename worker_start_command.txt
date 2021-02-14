@@ -1,0 +1,1 @@
+cd /home/rokkian/Documenti/0_DAI/RedisAgentpj ; /usr/bin/env /usr/lib/jvm/java-14-openjdk-amd64/bin/java -XX:+ShowCodeDetailsInExceptionMessages -Dfile.encoding=UTF-8 @/tmp/cp_60f06v3jtu7254syuz7ya3m24.argfile proactive_arch.App
