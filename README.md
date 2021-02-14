@@ -4,7 +4,7 @@ This is an implementation of a Contract Net, where a variable set of proactive w
 There are multiple publishers of tasks that can be activated simultaneously and the the workers or publisherse of tasks can be effimeral.
 The time-decoupling between publishers and executioners of tasks is reached.
 
-The system is process crash resistant if a maximum duration time of the tasks is known a-priori. Otherways those fault can loose the currently ongoing task.
+The system is process crash resistant if a maximum duration time of the tasks is known a-priori. Otherways those fault will loose ongoing task on the process.
 
 The coordination is implemented through a mutual exclusion lock in Redis. If needed on a distrubuted implementation of Redis it has to be implemented adding the Redlock algorithm support (https://redis.io/topics/distlock).
 
