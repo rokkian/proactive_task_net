@@ -17,7 +17,7 @@ Questo master pubblica task nel dataspace Redis, il suo compito è:
     5) Ripetere dopo dt
 """
 
-HOST : Final = "192.168.1.17" #"localhost"
+HOST : Final = "localhost" 
 PORT : Final = 6379
 DB : Final = 0
 MASTER_NAME : Final = f"master{random.randint(0, 1e4)}_"
