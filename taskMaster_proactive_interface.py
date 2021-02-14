@@ -8,7 +8,7 @@ import json
 import sys
 from typing import Final
 
-HOST : Final = "192.168.1.17" #"localhost"
+HOST : Final = "localhost"  #or the address of the Redis instance
 PORT : Final = 6379
 DB : Final = 0
 MASTER_NAME : Final = f"master{random.randint(0, 1e4)}_"
