@@ -11,3 +11,8 @@ The coordination is implemented through a mutual exclusion lock in Redis. If nee
 The publishers of task are simple Python3 scripts who add tasks to a list of to-do task on the Redis DB.
 
 The worker it's a Java-Maven simple agent. Further applications could implement a selection of the type of task execute if the agent is supposed to have only limited capabilities.
+
+## Requirements
+It's required to have an accesible Redis instance either local or remote.
+For the worker agents it's required Java and Maven.
+For Python it's required at least version 3.8.
