@@ -1,4 +1,4 @@
-# proactive_task_net
+# Proactive Task Net
 
 This is an implementation of a Contract Net, where a variable set of proactive workers checks the shared dataspace (Redis) in search of task to do.
 There are multiple publishers of tasks that can be activated simultaneously and the the workers or publisherse of tasks can be effimeral.
