@@ -14,5 +14,7 @@ The worker it's a Java-Maven simple agent. Further applications could implement 
 
 ## Requirements
 It's required to have an accesible Redis instance either local or remote.
+
 For the worker agents it's required Java and Maven.
+
 For Python it's required at least version 3.8.
