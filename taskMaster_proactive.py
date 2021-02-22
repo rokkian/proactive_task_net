@@ -17,12 +17,15 @@ Questo master pubblica task nel dataspace Redis, il suo compito è:
     5) Ripetere dopo dt
 """
 
-HOST : Final = "192.168.1.17" #"localhost"
+#HOST : Final = "localhost" 
+HOST : Final = "192.168.1.17" 
 PORT : Final = 6379
 DB : Final = 0
 MASTER_NAME : Final = f"master{random.randint(0, 1e4)}_"
 TODO_TASK_LIST : Final = "todo_tasks"
 DONE_TASK_LIST : Final = "done_tasks"
+TASK_PER_SECOND : Final = 1/0.5   #due task al secondo
+
 
 format = "%(asctime)s: %(message)s"
 logging.basicConfig(format=format, level=logging.INFO, datefmt="%H:%M:%S")
@@ -90,4 +93,4 @@ if __name__ == "__main__":
         #show_task_lists(r)
 
         task_counter += 1
-        time.sleep(0.2)
+        time.sleep(TASK_PER_SECOND)

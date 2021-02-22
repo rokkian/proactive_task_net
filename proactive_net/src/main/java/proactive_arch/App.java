@@ -8,7 +8,8 @@ import redis.clients.jedis.*;
  */
 public class App 
 {
-    static final String REDIS_HOST = "192.168.1.17";//"localhost";
+    //static final String REDIS_HOST = "localhost"; 
+	static final String REDIS_HOST = "192.168.1.17";
 	static final Integer REDIS_PORT = 6379;
 	static final int DB = 0;
 	static final String IdAgente = "Agent"+String.valueOf((int)(Math.random()*10000));		//va scelto un identificativo del singolo agente slave
